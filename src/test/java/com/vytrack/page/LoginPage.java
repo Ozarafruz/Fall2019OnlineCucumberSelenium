@@ -1,8 +1,9 @@
 package com.vytrack.page;
 
-import com.automation.utilities.BrowserUtils;
-import com.automation.utilities.ConfigurationReader;
-import com.automation.utilities.Driver;
+
+import com.vytrack.utilities.BrowserUtilities;
+import com.vytrack.utilities.ConfigurationReader;
+import com.vytrack.utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,7 +47,7 @@ public class LoginPage {
     public void login(String usernameValue, String passwordValue){
         username.sendKeys(usernameValue);
         password.sendKeys(passwordValue, Keys.ENTER);
-        BrowserUtils.wait(3);
+        BrowserUtilities.wait(3);
     }
 
     /**
