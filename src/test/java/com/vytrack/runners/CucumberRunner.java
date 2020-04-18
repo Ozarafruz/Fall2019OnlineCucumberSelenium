@@ -8,12 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = "com/vytrack/step_definitions",
         features = "src/test/resources/features",
-        dryRun = false,
+        dryRun = true,
         strict = false,
        //tags = "@driver",
        // tags = "@sales_manager and @driver",
      //   tags = "@sales_manager or @driver",
-        tags = "",
+        tags = "@activities",
         //tags = "not @driver" //run everything accept scenario with this tag
         plugin = "html:target/cucumber-html-report"
 

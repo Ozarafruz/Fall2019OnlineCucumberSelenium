@@ -23,7 +23,7 @@ public class Hooks {
 
     @After //import io.cucumber.java.After;
     public void teardown(){
-        System.out.println("Test clean uo");
+        System.out.println("Test clean up");
         Driver.closeDriver();
     }
 }
