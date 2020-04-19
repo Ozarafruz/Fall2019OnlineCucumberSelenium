@@ -1,5 +1,6 @@
 
  #Agile story
+   @login
 Feature: Login
   As user, I want to be able to login with username and password
 

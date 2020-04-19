@@ -6,16 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+
+
         glue = "com/vytrack/step_definitions",
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/activities",
         dryRun = false,
         strict = false,
-       //tags = "@driver",
-       // tags = "@sales_manager and @driver",
-     //   tags = "@sales_manager or @driver",
-       // tags = "@activities",
-        //tags = "not @driver" //run everything accept scenario with this tag
-        tags = "@create_calendar_event_2",
+        tags = "",
 
 
         plugin = {
@@ -23,7 +20,10 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json"
         }
 
-
 )
-public class CucumberRunner {
+
+
+
+public class ActivitiesTestRunner {
+
 }
