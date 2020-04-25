@@ -14,6 +14,7 @@ Feature: Create calendar event
     And user verifies that title of new calendar event is "Sprint Retrospective"
 
 
+
   @create_calendar_event_2
   Scenario: Create calendar event as sales manager with data table
     Given user is on the login page
@@ -23,6 +24,7 @@ Feature: Create calendar event
     And user enters new calendar event information:
       | description | On this meeting we discuss what went well, what went wrong and what can be improved |
       | title       | Sprint Retrospective                                                                |
+
     Then user click on save and close button
     And user verifies new calendar event was created successfully
       | description | On this meeting we discuss what went well, what went wrong and what can be improved |

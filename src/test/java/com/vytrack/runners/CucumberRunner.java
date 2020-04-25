@@ -10,20 +10,21 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         dryRun = false,
         strict = false,
-       //tags = "@driver",
-       // tags = "@sales_manager and @driver",
-     //   tags = "@sales_manager or @driver",
-       // tags = "@activities",
-        //tags = "not @driver" //run everything accept scenario with this tag
-        tags = "@create_calendar_event_2",
-
-
+        tags = "@create_car_ddt",
         plugin = {
                 "html:target/default-report",
-                "json:target/cucumber.json"
+                "json:target/cucumber1.json"
         }
-
 
 )
 public class CucumberRunner {
+
+
 }
+
+
+//tags = "@driver",
+// tags = "@sales_manager and @driver",
+//   tags = "@sales_manager or @driver",
+// tags = "@activities",
+//tags = "not @driver" //run everything accept scenario with this tag
